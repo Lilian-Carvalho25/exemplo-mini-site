@@ -1,0 +1,100 @@
+/* Tudo que estiver aqui dentro é CSS (regras css, com seletores, propriedades e valores) */
+
+/* Mudando o box model css */
+* { box-sizing: border-box;}
+
+body {
+    background: rgb(6,32,79);
+    background: rgb(32,81,170);
+    background: linear-gradient(to left, rgba(32,81,170,1) 0%, rgba(92,52,173,1) 15%, rgba(79,26,142,1) 26%, rgba(90,43,157,1) 47%, rgba(101,49,189,1) 67%, rgba(94,43,191,1) 84%, rgba(104,56,209,1) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Seletor Id */
+
+#container {
+    width: 70%;
+    margin: auto;
+    background-color: #7E79AD;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: white 5px 5px 8px,
+    pink -5px -5px 8px;
+}
+
+h1 {
+    background-color: #798CAD;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: solid 3px white;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: pink;
+}
+
+h3, p { font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+h3 {
+    background: linear-gradient( rgba(255, 192, 203, 0.37),rgba(216, 104, 216, 0.479));
+    font-size: 18px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* seletor classe */
+
+.centralizar { text-align: center;}
+
+.borda-arredondada { border-radius: 8px;}
+
+.sombra-texto { text-shadow: black 2px 2px 4px;}
+
+.destaque { background-color: #7E79AD;
+    color: white;
+    padding: 2px;
+    border: solid 2px pink;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+img { max-width: 100%;}
+
+nav {text-align: center;}
+
+/* Regra de estado inicial do link */
+
+    nav a {background-color: #8396A3;
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    width: 50%;
+    }
+
+/* Regra de acionamento do link */
+nav a:hover {
+    background-color: #ba66ff6c;
+    color: pink;
+    transition: 1s;
+    border-radius: 9%;
+    /* transform: scale(1.1);
+    box-shadow: white 2px 2px 3px;
+    transform: translateY(10px); */
+}
